@@ -1,13 +1,172 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background: #fdffb4;
+}
+
+.App{
+  max-width: 700px;
+  /* background: #f6ababee; */
+  margin: 50px auto;
+}
+
+.navbar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.0125px solid #c0bebe8d;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.navbar h2{
+  color: #ff6d6dee;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.links a{
+  margin-left: 20px;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.links a:hover{
+  opacity: 0.8;
+}
+
+.home{
+  text-align: start;
+  /* background-color: red; */
+  margin-top: 30px;
+}
+
+.preview-content{
+  padding: 20px;
+  border-bottom: 0.0125px solid #e1e0e0;
+  background: #fff;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.preview-content:hover{
+  background: #f1f0f0;
+  cursor: pointer;
+}
+
+.preview-content h3{
+  color: #ff6d6dee;
+  padding: 10px 0;
+}
+
+.blog-list{
+  margin-bottom: 20px;
+}
+
+.preview-content a{
+  text-decoration: none;
+}
+
+.preview-content a p{
+  margin-bottom: 20px;
+  
+}
+
+.detail-blog{
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px 10px;
+}
+
+.detail-blog h2{
+  color: #ff6d6dee;
+  font-size: 1.4rem;
+  padding: 10px 0;
+}
+
+.detail-blog div{
+  color: gray;
+  font-size: 0.8rem;
+  padding: 10px 0;
+}
+
+.detail-blog p{
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.detail-blog .deleteBtn{
+  color: red;
+  border: 1px solid red;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in;
+}
+
+.detail-blog .deleteBtn:hover{
+  /* opacity: 0.8; */
+  cursor: pointer;
+  margin-left: 1px;
+}
+
+/* create component */
+.create-blog{
+  /* max-width: 400px; */
+  background: #fff;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
+.create-blog h3{
+  text-align: center;
+}
+
+.create-blog form{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+.create-blog form input,.create-blog form textarea{
+  font-size: 1.2rem;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.create-blog form textarea{
+  height: 200px;
+}
+
+.create-blog form button{
+  /* display: block; */
+  width: 150px;
+  margin: 0 auto;
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.1rem;
+  background: #ff6d6dee;
+  font-weight: 400;
+  border: none;
+  margin-bottom: 10px;
+  transition: all 0.2s ease-in;
+}
+
+.create-blog form button:hover{
+  cursor: pointer;
+  transform: translateY(-1px);
+}
+
+.errorMessage{
+  font-size: 0.8rem;
+  color: red;
 }
